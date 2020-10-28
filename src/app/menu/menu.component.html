@@ -1,0 +1,29 @@
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">The Food APP</h1>
+    <p class="lead">The FOOD which goes inside tummmy, close your eyes and feel the taste...</p>
+  </div>
+  <div class="alert alert-warning" *ngIf="message">{{ message }}</div>
+  <div class="container cardholder">
+
+    <div class="card-deck mb-3 text-center">
+      
+    <div *ngFor="let menuitem of menuItems" class="card card-text h-100" style="width:200px">
+      <span *ngIf="menuitem.discount!=0" class="badge badge-secondary discbadge">{{menuitem.discount}}% off</span>
+    <img class="card-img-top .stretched-link mx-auto" [src]='menuitem.imgsrc' alt="Burger image">
+    <div class="card-body">
+      <h4 class="card-title">{{menuitem.name}}</h4>
+      <p class="card-text">{{menuitem.price| currency : 'INR' : 'symbol'}}</p>
+      
+      <div class="container " >
+        <button type="button" class="btn btn-light" (click)="updateQty(menuitem,'dec')">-</button>
+        <a class="p-2 bg-warning quantity">{{menuitem.quantity}}</a>
+        <a class="btn btn-light" (click)="updateQty(menuitem,'inc')">+</a>
+      </div>
+    </div>
+
+  </div>
+  
+</div>
+<div>
+   <button type="button" class=" btn btn-success checkout" (click)="isCartEmpty();">Check out</button>
+  </div>

@@ -1,0 +1,24 @@
+<div class="wrapper fadeInDown">
+  <div class="alert alert-warning" *ngIf="message">{{ message }}</div>
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="title">
+        <h3>THE FOOD APP</h3>
+      </div>
+  
+      <!-- Login Form -->
+      <form>
+        <input type="text" name="login" [(ngModel)]="userID" placeholder="login">
+        <input type="text" name="login" [(ngModel)]="password" placeholder="password">
+        <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Forgot Password?</a>
+      </div>
+  
+    </div>
+  </div>

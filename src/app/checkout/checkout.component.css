@@ -1,0 +1,21 @@
+.backbtn{
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.card{
+    margin-top: 20px;
+    width: 60%;
+}
+.card-body{
+    text-align: center;
+    
+}
+.jumbotron{
+    width:60%;
+    display: block;
+}
+.corder{
+    float: right;
+    margin-top: 15px;
+}

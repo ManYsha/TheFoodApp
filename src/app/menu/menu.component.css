@@ -1,0 +1,44 @@
+a{
+    vertical-align: middle;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    display: flex;
+}
+
+.card-body{
+    text-align: center;
+}
+.quantity{
+    padding: 45%;
+}
+.card-holder{
+    width: 50%;
+    position: absolute;
+}
+.checkout{
+    float: right;
+    margin-top: 25px;
+}
+
+.discbadge{
+    position: absolute;
+    margin-top: 5px;
+    margin-left:1px ;
+    padding: 5px;
+    float: left;
+}
+
+img{
+    margin-top: 5px;
+}
+
+.btn{
+    box-shadow: none !important;
+}
+.alert{
+    text-align: center;
+    
+}
